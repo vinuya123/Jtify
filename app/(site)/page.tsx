@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div 
       className="
-        bg-white bg-opacity-25
+        bg-white bg-opacity-10
         rounded-lg
         h-full
         w-full
