@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(site)/page.tsx"],
+  "include": ["next-env.d.js", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(site)/page.jsx", "tailwind.config.js", "components/SidebarItem.jsx", "components/Sidebar.jsx", "components/ListItem.jsx", "components/Library.jsx", "components/Header.jsx", "components/Button.jsx", "components/Box.jsx", "app/layout.jsx", "app/(site)/_app.jsx"],
   "exclude": ["node_modules"]
 }

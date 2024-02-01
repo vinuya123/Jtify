@@ -1,16 +1,10 @@
-"use client";
+"use client"
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
 
-interface ListItemsProps {
-    image: string;
-    name: string;
-    href: string;
-}
-
-const ListItem: React.FC<ListItemsProps> = ({
+const ListItem = ({
     image,
     name,
     href
@@ -21,6 +15,7 @@ const ListItem: React.FC<ListItemsProps> = ({
         // later again
         router.push(href);
     }
+    
     return (
         <button
             onClick={onClick}
@@ -48,7 +43,7 @@ const ListItem: React.FC<ListItemsProps> = ({
                     fill
                     src={image}
                     alt="Image"
-                />
+            />
             </div>
             <p className="font-medium truncate py-5">
                 {name}
@@ -73,7 +68,7 @@ const ListItem: React.FC<ListItemsProps> = ({
                 <FaPlay className="text-black" />
             </div>
         </button>
-    )
+    );
 }
 
 export default ListItem;
